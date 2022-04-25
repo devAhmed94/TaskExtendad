@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="@dimen/_6sdp">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/ivArticleImage"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="centerCrop"
+    app:layout_constraintDimensionRatio="H,1:1"
+    app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvSource"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_13sdp"
+    android:textColor="@android:color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ivArticleImage"
+    tools:text="SOURCE" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvTitle"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:ellipsize="end"
+    android:maxLines="3"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="TITLE" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvDescription"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_13sdp"
+    android:ellipsize="end"
+    android:maxLines="5"
+    android:textColor="@android:color/black"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/ivArticleImage"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+    tools:text="DESCRIPTION" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/tvPublishedAt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:textColor="@android:color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvSource"
+    tools:text="PUBLISHED AT" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_1sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:background="@android:color/darker_gray"
+    app:layout_constraintTop_toBottomOf="@+id/tvPublishedAt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

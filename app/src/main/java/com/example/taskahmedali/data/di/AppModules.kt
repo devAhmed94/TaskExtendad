@@ -3,7 +3,7 @@ package com.example.taskahmedali.data.di
 import com.example.taskahmedali.data.network.Api
 import com.example.epoxyapp.data.repositories.NewsRepo
 import com.example.taskahmedali.core.BASE_URL
-import com.example.taskahmedali.presentation.newsScreen.NewsViewModel
+import com.example.taskahmedali.presentation.baseActivity.NewsViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.androidx.viewmodel.dsl.viewModel

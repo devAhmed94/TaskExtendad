@@ -1,4 +1,4 @@
-package com.example.taskahmedali.presentation.newsScreen
+package com.example.taskahmedali.presentation.baseActivity
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

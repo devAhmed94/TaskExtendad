@@ -3,6 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.example.taskahmedali">
 
+  <uses-permission android:name="android.permission.INTERNET" />
   <application
     android:name=".core.UsersApp"
     android:allowBackup="true"
@@ -12,7 +13,7 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.TaskAhmedAli">
     <activity
-      android:name=".presentation.BaseActivity"
+      android:name=".presentation.baseActivity.BaseActivity"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

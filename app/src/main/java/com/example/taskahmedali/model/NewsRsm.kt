@@ -3,7 +3,7 @@ package com.example.taskahmedali.model
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
-
+import java.io.Serializable
 @Parcelize
 data class NewsRsm(
   @SerializedName("status")
@@ -13,13 +13,12 @@ data class NewsRsm(
   @SerializedName("articles")
   val articles: ArrayList<Article>
 ) : Parcelable {
-
   @Parcelize
   data class Article(
     @SerializedName("source")
     val source: Source,
     @SerializedName("author")
-    val author: String,
+    val author: String?,
     @SerializedName("title")
     val title: String,
     @SerializedName("description")
@@ -31,15 +30,14 @@ data class NewsRsm(
     @SerializedName("publishedAt")
     val publishedAt: String,
     @SerializedName("content")
-    val content: String
+    val content: String?
   ) : Parcelable {
-
     @Parcelize
     data class Source(
       @SerializedName("id")
-      val id: String,
+      val id: String?,
       @SerializedName("name")
       val name: String
-    ) : Parcelable
+    ) : Serializable, Parcelable
   }
 }

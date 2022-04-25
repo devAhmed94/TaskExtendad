@@ -25,8 +25,7 @@
     android:name="com.example.taskahmedali.presentation.detailsScreen.DetailsFragment"
     android:label="fragment_details"
     tools:layout="@layout/fragment_details" >
-    <argument
-      android:name="article"
+    <argument android:name="article"
       app:argType="com.example.taskahmedali.model.NewsRsm$Article" />
   </fragment>
 </navigation>
